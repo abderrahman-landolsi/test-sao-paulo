@@ -1,0 +1,57 @@
+import React,{ useState,useEffect  }  from 'react';
+import styled from 'styled-components';
+import Switch from "@material-ui/core/Switch";
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import './style.css';
+
+
+const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+
+  li {
+    padding: 18px 10px;
+    
+    font-size: 20px;
+    color: #0D2538;
+  }
+
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    background-color: #0D2538;
+    position: fixed;
+    z-index:99;
+    transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    li {
+      color: #fff;
+    } 
+  }
+`;
+
+
+
+
+const RightNav = ({ open }) => {
+
+
+  return (
+    <Ul open={open}>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      
+    </Ul>
+  )
+}
+
+export default RightNav
