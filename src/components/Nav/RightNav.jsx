@@ -1,10 +1,5 @@
-import React,{ useState,useEffect  }  from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Switch from "@material-ui/core/Switch";
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import './style.css';
 
 
 const Ul = styled.ul`

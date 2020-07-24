@@ -1,19 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Table, Row, Col, Button } from 'react-bootstrap';
 import iphone from './../../assets/iphone.png';
 import Rating from '@material-ui/lab/Rating';
-import logo from './../../assets/logo.png';
 import ads from './../../assets/ads.jpg';
 import facebook from './../../assets/facebook.png';
 import instagram from './../../assets/instagram.png';
 import './style.css';
-
-
 import Switch from "@material-ui/core/Switch";
-import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
+
 
 const Body = () => {
     const [value, setValue] = React.useState(2);
